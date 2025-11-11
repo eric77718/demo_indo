@@ -1,0 +1,196 @@
+@media not all and (min-resolution:.001dpcm)
+{
+@supports (-webkit-appearance:none) {
+#nav-tab-prev, #member-nav-tab-prev, .game-nav-tab-prev {
+   left: -30px;
+}
+#nav-tab-next, #member-nav-tab-next, .game-nav-tab-next {
+   right: -30px;
+}
+@media (max-width:1200px) {
+#member-nav-tab > .nav-link:first-child {
+padding-left: 2rem;
+  min-width: 92px;
+}
+
+#member-nav-tab > .nav-link:last-child {
+padding-right: 2rem;
+  min-width: 92px;
+}
+}
+}
+}
+
+a.link-forgot {
+	color: #dca91e;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+.bg-theme {
+	background: #c99339;
+}
+/* Navbar */
+#game-navbar .dropdown-menu[data-bs-popper] {
+	box-shadow: 0px 5px 8px #e2c696;
+}
+
+#running-text {
+	background-color: #c99339;
+}
+
+/* Game Populer & Terbaru */
+.game-card-new {
+	background: #c99339;
+	border: 1px solid #c99339;
+}
+.game-card-header,
+.game-card-overlay,
+.game-card-new h3 {
+	background: #c99339;
+}
+.game-card-arc path {
+	fill: #c99339;
+}
+.game-card-description > div {
+	color: #c99339;
+}
+.game-card-description {
+	color: #ddd;
+}
+
+/* Input Form */
+.game-list-switch .form-check-input:checked {
+  background-color: #c99339;
+  border-color: #c99339;
+}
+.game-form .form-select, .game-form .form-control {
+	border-color: #ffb928;
+}
+.game-form input:focus {
+	border-color: #c99339;
+	box-shadow: 0 0 5px rgba(255,255,0,.2), inset 0 0 5px rgba(255,255,0,.1), 0 2px 0 #000;
+}
+@keyframes glow {
+	0% {
+		border-color: #c99339;
+		box-shadow: 0 0 5px rgba(255,255,0,.2), inset 0 0 5px rgba(255,255,0,.1), 0 2px 0 #000;
+	}	
+	100% {
+		border-color: #e2c696;
+		box-shadow: 0 0 20px rgba(255,255,0,.6), inset 0 0 10px rgba(255,255,0,.4), 0 2px 0 #000;
+	}
+}
+
+/* Game List Scroll */
+.game-list .nav-tabs .nav-item.show .nav-link, 
+.game-list .nav-tabs .nav-link.active {
+	box-shadow: #e2c696 0px -2px 2px 0px, #e2c696 0px -2px 6px 2px;
+}
+.game-list .tab-content {
+	box-shadow: #e2c696 0px 1px 2px 0px, #e2c696 0px 2px 6px 2px;
+}
+
+/* Back To Top */
+.back-to-top, .back-to-top:hover, .back-to-top:focus {
+	background: #c99339;
+}
+
+/* Bottom Nav */
+.nav-icons {
+	background: #c99339;
+}
+
+/* Table */
+.table-referral table.table thead {
+	background: #c99339;
+}
+
+/* button */
+.btn-line {
+	background: linear-gradient(to bottom, #e2c696 30%, #c99339 70%);
+}
+.btn-theme-secondary {
+	box-shadow: 0px 0px 2px 2px rgba(247, 4, 4, 0.8);
+	text-shadow: 5px 4px 0px #c10303;
+	background: linear-gradient(to bottom, #fd4f4f 30%, #c10303 70%);
+	border-color: #c10303;
+}
+.btn-theme-secondary:hover,
+.btn-theme-secondary:focus {
+	border-color: #c10303;
+	box-shadow: 0px 0px 2px 2px rgba(247, 4, 4, 0.8);
+}
+.btn-theme-primary {
+	box-shadow: 0px 0px 2px 2px rgba(247, 172, 4, 0.8);
+	text-shadow: 5px 4px 0px #c99339;
+	background: linear-gradient(to bottom, #e2c696 30%, #c99339 70%);
+	border-color: #c99339;
+}
+.btn-theme-primary:hover,
+.btn-theme-primary:focus {
+	border-color: #c99339;
+	box-shadow: 0px 0px 2px 2px rgba(247, 172, 4, 0.8);
+}
+
+/* Member */
+.game-member-nav .game-list .nav-tabs .nav-item.show .nav-link, 
+.game-member-nav .game-list .nav-tabs .nav-link.active, 
+.game-member-nav .game-list .nav-tabs .nav-link:focus, 
+.game-member-nav .game-list .nav-tabs .nav-link:hover {
+	background-color: #c99339;
+}
+.nav-pills .nav-link.active, 
+.nav-pills .show > .nav-link {
+	background-color: #c99339;
+}
+.game-button-toggle .btn-check:active + .btn-outline-primary, 
+.game-button-toggle .btn-check:checked + .btn-outline-primary, 
+.game-button-toggle .btn-outline-primary.active, 
+.game-button-toggle .btn-outline-primary.dropdown-toggle.show, 
+.game-button-toggle .btn-outline-primary:active, 
+.game-button-toggle .btn-outline-primary:hover {
+	background-color: #c99339;
+	/*color: #222;*/
+	border-color: #c99339;
+}
+.game-button-toggle .btn-outline-primary {
+	border-color: #c99339;
+}
+.alert-game-tab {
+	background: #4fc3f7;
+	border-color: #4fc3f7;
+}
+
+#eventAccordion a {
+	color: #c99339;
+	text-decoration: none;
+}
+#eventAccordion a:hover,
+#eventAccordion a:focus {
+	color: #fff;
+}
+
+
+@media (max-width:991.98px){
+	.navbar-dark #game-navbar .navbar-nav .nav-link.active, 
+	.navbar-dark #game-navbar .navbar-nav .nav-link:focus, 
+	.navbar-dark #game-navbar .navbar-nav .nav-link:hover{
+		background: #c99339;
+	}
+	.nav-icons ul li a.active, 
+	.nav-icons ul li a:focus, 
+	.nav-icons ul li a:hover {
+		color: #222;
+		text-shadow: none;
+	}
+}
+
+.text-justify.text-content a{
+	color: #c99339 !important;
+	text-decoration: none;
+}
+.text-justify.text-content a:hover,
+.text-justify.text-content a:focus{
+	color: #ccc !important;
+}

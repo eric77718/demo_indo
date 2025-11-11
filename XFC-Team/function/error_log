@@ -1,0 +1,4 @@
+[26-Jan-2024 02:37:41 UTC] PHP Notice:  Undefined index: username in /home/feeabarx/public_html/XFC-Team/function/cek_login.php on line 5
+[26-Jan-2024 02:37:41 UTC] PHP Notice:  Undefined index: password in /home/feeabarx/public_html/XFC-Team/function/cek_login.php on line 6
+[02-Mar-2024 09:10:53 UTC] PHP Notice:  Undefined index: username in /home/kingcuan88/public_html/XFC-Team/function/cek_login.php on line 5
+[02-Mar-2024 09:10:53 UTC] PHP Notice:  Undefined index: password in /home/kingcuan88/public_html/XFC-Team/function/cek_login.php on line 6

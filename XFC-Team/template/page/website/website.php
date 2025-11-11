@@ -1,0 +1,110 @@
+<?php
+if ($c['level'] == "superadmin") {
+	?>
+	<div class="page-breadcrumb">
+		<div class="row">
+			<div class="col-5 align-self-center">
+				<h4 class="page-title">Seo Website & Logo</h4>
+			</div>
+			<div class="col-7 align-self-center">
+				<div class="d-flex align-items-center justify-content-end">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item">
+								<a href="#">Seo Website & Logo</a>
+							</li>
+							<li class="breadcrumb-item active" aria-current="page">Menu Seo Website & Logo</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">Data Seo Website</h4>
+						<?php
+						$query = mysqli_query($koneksi, "SELECT * FROM tb_web");
+						while ($data = mysqli_fetch_array($query)) {
+							?>
+							<form class="form p-t-20" enctype="multipart/form-data" action="?page=edit_website" method="POST">
+								<div class="form-group">
+									<label>Gambar</label>
+									<img src="../../assets/img/<?php echo $data['logo'] ?>" class="container-fluid">
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="basic-addon11"><i class="ti-user"></i></span>
+										</div>
+										<input type="hidden" name="id" value="<?php echo $data['id'] ?>">
+										<input type="file" class="form-control" name="file">
+
+									</div>
+									<p style="color: red; font-style: italic;">*Abaikan Jika Tidak Ingin Mengubah Logo</p>
+									
+
+								</div>
+								<div class="form-group">
+									<label>Judul / Title Website</label>
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="basic-addon11"><i class="ti-user"></i></span>
+										</div>
+										<input type="text" class="form-control" value="<?php echo $data['title'] ?>" name="judul" required="">
+									</div>
+								</div>
+								<div class="form-group">
+									<label>Deskripsi</label>
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="basic-addon11"><i class="ti-user"></i></span>
+										</div>
+										<textarea name="deskripsi" rows="5" class="form-control"><?php echo $data['deskripsi']; ?></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<label>Keyword</label>
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="basic-addon11"><i class="ti-user"></i></span>
+										</div>
+										<textarea name="keyword" rows="5" class="form-control"><?php echo $data['keyword']; ?></textarea>
+										
+									</div>
+								</div>
+								<div class="form-group">
+									<label>URL WEB</label>
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="basic-addon11"><i class="ti-user"></i></span>
+										</div>
+										<input type="text" class="form-control" value="<?php echo $data['url'] ?>" name="url_web" required="">
+									</div>
+								</div>
+								<button type="submit" class="btn btn-success m-r-10" name="upload">Submit</button>
+								<button type="reset" class="btn btn-dark">Cancel</button>
+							</form>
+							<?php
+						}
+						?>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<?php
+}else{
+	?>
+	<script type="text/javascript">
+		window.location = "?page=dashboard";
+	</script>
+	<?php
+}
+?>
