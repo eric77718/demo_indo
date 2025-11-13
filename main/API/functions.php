@@ -2,9 +2,9 @@
 
 class test
 {
-    private $agent_code = 'bet4wins_demo';
-    private $agent_token = '5fe1e263421fe710f00945df3ab97d32';
-    private $api_endpoit = 'https://api.nexusggr.eu';
+    private $agent_code = '';
+    private $agent_token = '';
+    private $api_endpoit = '';
 
     public function CreateMember($username)
     {

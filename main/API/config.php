@@ -17,7 +17,7 @@ $hallInfo = array(
 );
 
 $apiFiver = array(
-    'url' => 'https://api.nexusggr.eu',
-    'agent_token' => '5fe1e263421fe710f00945df3ab97d32',
-    'agent_code' => 'bet4wins_demo'
+    'url' => '',
+    'agent_token' => '',
+    'agent_code' => ''
 );
