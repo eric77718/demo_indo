@@ -1,1 +1,1 @@
-<?php $koneksi = mysqli_connect('localhost', 'root', '', 'investcl_slot'); ?>
+<?php $koneksi = mysqli_connect('localhost', 'root', 'root', 'investcl_slot'); ?>

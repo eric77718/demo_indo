@@ -191,7 +191,7 @@ if ($punya_user['status'] == "Suspend") {
     <div class="header-mobile__marquee">
       <i class="fas fa-bullhorn"></i>
       <marquee class="marquee"><?php echo $title; ?></marquee>
-      <a href="" style="line-height: 0;"><img class="pr-2" src="https://images.linkcdn.cloud/global/nav-addons/event.webp" alt="Event" width="85px"></a>
+      <a href="" style="line-height: 0;"><img class="pr-2" src="" alt="Event" width="85px"></a>
     </div>
   </div>
 

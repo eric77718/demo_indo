@@ -42,7 +42,7 @@
                                 </div>
                                 <div class="slot-game-name"><?php echo $game_name; ?></div>
                                 <div class="slot-game-hover">
-                                    <a class="main sekarang main-sekarang-alert" href="<?php echo $link_url ?>">
+                                    <a class="main sekarang main-sekarang-alert" href="#">
                                         Main Sekarang
                                     </a>
                                 </div>

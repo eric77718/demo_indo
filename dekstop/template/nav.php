@@ -231,7 +231,7 @@
                 </a>
               </div>
               <div class="nav-item">
-                <a class="nav-link" href="#"><img src="https://images.linkcdn.cloud/global/nav-addons/event.webp" alt="Event" width="70px"></a>
+                <a class="nav-link" href="#">Event</a>
               </div>
             </div>
           </div>
@@ -471,7 +471,7 @@
                 </a>
               </div>
               <div class="nav-item">
-                <a class="nav-link" href="#"><img src="https://images.linkcdn.cloud/global/nav-addons/event.webp" alt="Event" width="70px"></a>
+                <a class="nav-link" href="#">Event</a>
               </div>
             </div>
           </div>

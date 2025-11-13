@@ -41,6 +41,7 @@ if ($id_login == '') {
 
 				// $createAccountMember = createUser($extplayer);
 				$createAccountMember = $TS->CreateMember($extplayer);
+				
 				$query = mysqli_query($koneksi, "INSERT INTO tb_user (id, extplayer, username, password, nama_lengkap, email, no_hp, level, refferal, status, status_game) VALUES (NULL, '$extplayer', '$username', '$password', '$pemilik_rekening', '$email', '$no_whatsapp', '$level','$extplayer','$status','ongame') ");
 				$query2 = mysqli_query($koneksi, "INSERT INTO tb_saldo (id, id_user, active, transfer, pending, payout) VALUES (NULL, '$extplayer', '0','0','0','0') ");
 				$query3 = mysqli_query($koneksi, "INSERT INTO tb_bank (id, icon, nama_bank, nomor_rekening, nama_pemilik, id_user, level) VALUES (NULL,'', '$bank', '$norek', '$pemilik_rekening', '$extplayer','') ");

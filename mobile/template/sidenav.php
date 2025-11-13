@@ -119,13 +119,13 @@
         </div>
     </div>
     <div id="header-lang" class="header-flag">
-        <img src="https://images.linkcdn.cloud/global/default/icon/lang/indonesia.png" width="20" height="14" alt="id">
+        <img src="https://flagcdn.com/w20/id.png" width="20" height="14" alt="id">
         <i class="fas fa-caret-down"></i>
 
         <div id="lang-dropdown" class="flag-dropdown">
             <a href="javascript:;" data-locale="id" name="locale-switch">
                 <div class="flag-item">
-                    <img src="https://images.linkcdn.cloud/global/default/icon/lang/indonesia.png" alt="id">
+                    <img src="https://flagcdn.com/w20/id.png" alt="id">
                     <span>Indonesia</span>
                 </div>
             </a>

@@ -136,13 +136,13 @@ if ($punya_user['status'] == "Suspend") {
           <div class="col-lg-3">
             <div class="header-icons">
               <div id="header-lang" class="header-flag">
-                <img src="https://images.linkcdn.cloud/global/default/icon/lang/indonesia.png" alt="id">
+                <img src="https://flagcdn.com/w20/id.png" alt="id">
                 <i class="fas fa-caret-down"></i>
 
                 <div id="lang-dropdown" class="flag-dropdown">
                   <a href="javascript:;" data-locale="id" name="locale-switch">
                     <div class="flag-item">
-                      <img src="https://images.linkcdn.cloud/global/default/icon/lang/indonesia.png" alt="id">
+                      <img src="https://flagcdn.com/w20/id.png" alt="id">
                       <span>Indonesia</span>
                     </div>
                   </a>
@@ -327,7 +327,7 @@ if ($punya_user['status'] == "Suspend") {
     <div class="header-mobile__marquee">
       <i class="fas fa-bullhorn"></i>
       <marquee class="marquee"><?php echo $title ?></marquee>
-      <a href="" style="line-height: 0;"><img class="pr-2" src="https://images.linkcdn.cloud/global/nav-addons/event.webp" alt="Event" width="85px"></a>
+      <a href="" style="line-height: 0;"><img class="pr-2" src="" alt="Event" width="85px"></a>
     </div>
     <div id="mobilePageLoadingBar" class="progress-bar progress-bar-success" role="progressbar" style="height:4px;width:1%;position:absolute;z-index:999;display:none;"></div>
   </div>

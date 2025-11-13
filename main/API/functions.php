@@ -2,10 +2,9 @@
 
 class test
 {
-    
-    private $agent_code = '';
-    private $agent_token = '';
-    private $api_endpoit = '';
+    private $agent_code = 'bet4wins_demo';
+    private $agent_token = '5fe1e263421fe710f00945df3ab97d32';
+    private $api_endpoit = 'https://api.nexusggr.eu';
 
     public function CreateMember($username)
     {
@@ -22,16 +21,23 @@ class test
 
         $headerArray = ['Content-Type: application/json'];
 
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $this->api_endpoit);
-        curl_setopt($ch, CURLOPT_POST, 1);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonData);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, $headerArray);
-        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        try {
+            //code...
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $this->api_endpoit);
+            curl_setopt($ch, CURLOPT_POST, 1);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonData);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headerArray);
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-        $res = curl_exec($ch);
-        curl_close($ch);
+            $res = curl_exec($ch);
+            curl_close($ch);
+        } catch (\Throwable $th) {
+            //throw $th;
+        }
+
+
         return $res;
     }
 

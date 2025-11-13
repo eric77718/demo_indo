@@ -50,8 +50,10 @@ if ($datas === null) {
                 // $decode = json_decode($addBalanceAPI, true);
 
                 // if ($decode['status'] == "success") {
-                    $insert_transaksi = mysqli_query($koneksi, "INSERT INTO `tb_trxgame` 
-                    (`kd_transaksi`, `date`, `transaksi`, `total`, `saldo`, `note`, `gameid`, `provider`, `id_user`,`status`) VALUES ('$orderid','$created_date','Transaction IN Wallet Provider','$pushCash','$gameCode','$userCode','Success')");
+                    $insert_transaksi = mysqli_query($koneksi, "INSERT INTO `tb_trxgame`
+                                (`kd_transaksi`, `date`, `transaksi`, `total`, `saldo`, `note`, `gameid`, `provider`, `id_user`, `status`) VALUES
+                                ('$orderid', '$created_date', 'Transaction IN Wallet Provider', '$pushCash', '$pushCash', '$provider', '$gameCode', '$provider', '$userCode', '1')");
+
 
                     $getBalanceUser = mysqli_query($koneksi, "UPDATE tb_saldo SET active='0' WHERE id_user='$userCode'");
                     
